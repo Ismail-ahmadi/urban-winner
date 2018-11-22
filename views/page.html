@@ -1,0 +1,20 @@
+{% layout 'includes/layout.html' %}
+
+{% block content %}
+
+  <div class="container">
+    <h1>{{ title }}</h1>
+
+    {% if author %}
+      <span class="italic faint">by&nbsp;</span>
+      <span class="h6 spaced caps faint">{{ author }}</span>
+    {% endif %}
+
+    <p class="lead">{{ summary }}</p>
+    
+    <div class="container container--text">
+      {{ content }}
+    </div>
+  </div>
+  
+{% endblock %}

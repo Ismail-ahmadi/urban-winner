@@ -1,0 +1,14 @@
+{% assign pageTitle = title | default: site.title %}
+
+<!doctype html>
+<html lang="{{ site.lang }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="/assets/dist/style.css">
+    <title>{{ pageTitle }}</title>
+
+    {% include 'includes/favicons.html' %}
+  </head>

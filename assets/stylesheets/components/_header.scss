@@ -1,0 +1,19 @@
+.header {
+  box: horizontal space-between middle;
+  padding: $s 0;
+
+  .logo {
+    color: $gray-400;
+    padding: $h;
+
+    svg {
+      size: $s*2;
+    }
+  }
+
+  .menu {
+    &__link {
+      padding: $h;
+    }
+  }
+}

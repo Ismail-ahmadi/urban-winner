@@ -1,0 +1,93 @@
+html,
+body {
+  text: $body $font-weight-normal $font-size-root $line-height;
+  font-family: $font-family;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+h1,
+.h1 {
+  text: $black $font-weight-bold $font-size-h1 $headings-line-height;
+}
+
+h2,
+.h2 {
+  text: $black $font-weight-bold $font-size-h2 $headings-line-height;
+}
+
+h3,
+.h3 {
+  text: $black $font-weight-bold $font-size-h3 1.4;
+}
+
+h4,
+.h4 {
+  text: $black $font-weight-bold $font-size-large $line-height;
+}
+
+h5,
+.h5 {
+  text: $black $font-weight-bold $font-size-regular $line-height;
+}
+
+h6,
+.h6 {
+  text: $black $font-weight-bold $font-size-small 1;
+}
+
+/**
+ * Stylistic Classes
+ */
+// Weight
+.bold,
+b,
+strong {
+  font-weight: $font-weight-bold;
+}
+
+// Decorations
+.lead {
+  text: $gray-500 italic $font-weight-normal $font-size-large 1.425;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.spaced {
+  letter-spacing: 2px;
+}
+
+// Alignments
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/**
+ * Colors
+ */
+.white {
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.blue {
+  color: $blue;
+}
+
+.faint {
+  color: $gray-500;
+}

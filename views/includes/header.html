@@ -1,0 +1,21 @@
+<header class="header container">
+  <a href="{{ site.url }}" class="logo">
+    {% Icon 'logo' %}
+  </a>
+
+  <nav class="menu" role="navigation">
+    {% for item in collections.nav %}
+
+      {% if item.url == page.url %}
+        {% assign class = 'menu__link menu__link--active' %}
+      {% else %}
+        {% assign class = 'menu__link' %}
+      {% endif %}
+      
+      <a href="{{ item.url }}" class="{{ class }}">
+        {{ item.data.title }}
+      </a>
+
+    {% endfor %}
+  </nav>
+</header>

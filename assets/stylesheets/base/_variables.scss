@@ -1,0 +1,73 @@
+/******************************
+ * Colors
+ ******************************/
+// Grayscale
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #888888 !default;
+$gray-600: #555555 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$body: $gray-800 !default;
+$line: $gray-200 !default;
+
+// Others
+$blue: #0064c9 !default;
+
+/******************************
+ * Spacing
+ ******************************/
+$q: .25rem !default;
+$h: .5rem !default;
+$t: .75rem !default;
+$s: 1rem !default;
+
+/******************************
+ * Layout
+ ******************************/
+$grid-breakpoints: (xs: 0, sm: 544px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px) !default;
+$image-breakpoints: (xs: 576, sm: 800, md: 1024, lg: 1280, xl: 1440, xxl: 1600) !default;
+$desktop: 'md' !default;
+$container-width: 83.333% !default;
+$container-max: 60rem !default;
+$container-text-max: 33rem !default;
+/******************************
+ * Typography
+ ******************************/
+$font-size-root: 20px !default;
+$font-size: 1rem !default;
+
+// Weights
+$font-weight-normal: 400 !default;
+$font-weight-bold: 900 !default;
+
+// Sizes
+$font-size-h1: 2.441rem !default;
+$font-size-h2: 1.953rem !default;
+$font-size-h3: 1.563rem !default;
+$font-size-large: 1.25rem !default;
+$font-size-regular: 1rem !default;
+$font-size-small: .8rem !default;
+
+// Line Heights
+$line-height: 1.6 !default;
+$headings-line-height: 1.0425 !default;
+
+// Sans Serif
+$font-family: sans-serif;
+
+/******************************
+ * Miscellaneous
+ ******************************/
+// Transitions
+$slow: 0.4s !default;
+$regular: 0.25s !default;
+$fast: 0.175s !default;
+
+// Z-Index
+$zindex-header: 10000 !default;
