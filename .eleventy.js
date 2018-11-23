@@ -6,8 +6,6 @@ module.exports = eleventyConfig => {
     dynamicPartials: true
   });
 
-  // eleventyConfig.addLayoutAlias('base', 'includes/base.pug');
-
   eleventyConfig.addShortcode('Icon', logo => `
     <svg aria-hidden="true" role="presentation">
       <use xlink:href="#icon-${logo}" />
@@ -27,11 +25,10 @@ module.exports = eleventyConfig => {
     return content;
   });
 
-  // Don't process folders with static assets and cms admin
+  eleventyConfig.addPassthroughCopy('admin');
   eleventyConfig.addPassthroughCopy('assets/dist');
   eleventyConfig.addPassthroughCopy('assets/fonts');
   eleventyConfig.addPassthroughCopy('assets/favicons');
-  // eleventyConfig.addPassthroughCopy('admin');
 
   return {
     dir: {

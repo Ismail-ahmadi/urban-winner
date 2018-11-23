@@ -4,7 +4,7 @@
     "**/.vscode": true,
     "**/.eslintrc.js": true,
     "**/.gitignore": true,
-    "**/.eleventy.js": true,
+    "**/.eleventy.js": false,
     "**/node_modules": true,
     "**/package-lock.json": true,
     "**/webpack.config.js": true,
