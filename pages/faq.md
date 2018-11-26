@@ -1,6 +1,7 @@
 ---
 title: Frequently Asked Questions
 slug: faq
+tags: nav
 summary: A list of questions about our business
 questions:
   - answer: >-
