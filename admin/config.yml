@@ -1,35 +1,29 @@
-# backend:
-#   name: git-gateway
-#   branch: master
+backend:
+  name: git-gateway
+  branch: master
 
-# display_url: 
-# logo_url: 
-# public_folder: '/images'
-# media_folder: 'source/images'
-# media_library:
-#   name: uploadcare
-#   config:
-#     publicKey: 
+display_url: 
+logo_url: 
+public_folder: '/images'
+media_folder: 'source/images'
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 
 
-# collections:
-#   - name: 'pages'
-#     label: 'Pages'
-#     editor:
-#       preview: false
-#     files:
-#       - label: 'About Page'
-#         name: 'about'
-#         file: 'source/about/index.md'
-#         fields:
-#           - {label: 'Title', name: 'title', widget: 'string'}
-#           - {label: 'Overview', name: 'teaser', hint: 'Will be displayed as a larger text', widget: 'text'}
-#           - label: Team
-#             name: team
-#             widget: list
-#             fields:
-#               - {label: Name, name: name, widget: string}
-#               - {label: Position, name: position, widget: string}
-#               - {label: Photo, name: photo, widget: image}
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    editor:
+      preview: false
+    files:
+      - label: 'Page One'
+        name: 'one'
+        file: 'pages/one.md'
+        fields:
+          - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text'}
+          - {label: 'Body', name: 'body', widget: 'markdown'}
   
 #   # - name: 'posts'
 #   #   label: 'Posts'
