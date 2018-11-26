@@ -32,6 +32,7 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq' }
+          - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'faq' }
           - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
           - { label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text' }
           - label: 'Questions'
