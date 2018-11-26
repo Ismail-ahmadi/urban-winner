@@ -4,7 +4,4 @@ module.exports = {
   title: 'Cool Inc.',
   url: 'https://cool.inc',
   themeColor: '#fb1',
-  menu: {
-    About: '/about',
-  },
 };

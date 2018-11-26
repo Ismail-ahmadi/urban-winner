@@ -1,6 +1,6 @@
 ---
 title: Page One Title
-slug: one
+slug: one 
 tags: nav
 author: Niko Solihin
 summary: Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo.
