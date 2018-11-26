@@ -21,23 +21,36 @@ collections:
         name: 'one'
         file: 'pages/one.md'
         fields:
-          - {label: 'Title', name: 'title', widget: 'string'}
-          - {label: 'Slug', name: 'slug', widget: 'string'}
-          - {label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text'}
-          - {label: 'Body', name: 'body', widget: 'markdown'}
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'one' }
+          - { label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      
+      - label: 'FAQ'
+        name: 'faq'
+        file: 'pages/faq.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'faq' }
+          - { label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text' }
+          - label: 'Questions'
+            name: 'questions'
+            widget: 'list'
+              fields:
+                - { label: 'Question', name: 'question', widget: 'string' }
+                - { label: 'Answer', name: 'answer', widget: 'text' }
 
-#   # - name: 'posts'
-#   #   label: 'Posts'
-#   #   label_singular: 'Post'
-#   #   description: The description is a great place for tone setting, high level information, and editing guidelines that are specific to a collection.
-#   #   folder: 'source/_posts'
-#   #   editor:
-#   #     preview: false
-#   #   create: true
-#   #   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-#   #   fields:
-#   #     - {label: 'Title', name: 'title', widget: 'string'}
-#   #     - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-#   #     - {label: 'Cover Image', name: 'image', widget: 'image', required: false}
-#   #     - {label: 'Language', name: 'language', widget: 'select', options: ['en', 'fr']}
-#   #     - {label: 'Body', name: 'body', widget: 'markdown'}
+
+
+  # - name: 'posts'
+  #   label: 'Posts'
+  #   label_singular: 'Post'
+  #   editor:
+  #     preview: false
+  #   description: The description is a great place for high level information, and editing guidelines that are specific to this collection.
+  #   create: true
+  #   folder: 'posts'
+  #   slug: '{{slug}}'
+  #   fields:
+  #     - { label: 'Title', name: 'title', widget: 'string' }
+  #     - { label: 'Body', name: 'body', widget: 'markdown' }
