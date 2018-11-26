@@ -22,9 +22,10 @@ collections:
         file: 'pages/one.md'
         fields:
           - {label: 'Title', name: 'title', widget: 'string'}
+          - {label: 'Slug', name: 'slug', widget: 'string'}
           - {label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text'}
           - {label: 'Body', name: 'body', widget: 'markdown'}
-  
+
 #   # - name: 'posts'
 #   #   label: 'Posts'
 #   #   label_singular: 'Post'
