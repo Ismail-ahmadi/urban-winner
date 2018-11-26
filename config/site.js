@@ -1,7 +1,7 @@
 module.exports = {
   lang: 'en',
-  name: 'Cool Inc.',
-  title: 'Cool Inc.',
-  url: 'https://cool.inc',
+  name: 'Milo & Finn',
+  title: 'Welcome to our site',
+  url: 'https://miloandfinn.netlify.com',
   themeColor: '#fb1',
 };
