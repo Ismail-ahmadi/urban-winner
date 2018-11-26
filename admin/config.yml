@@ -36,9 +36,9 @@ collections:
           - label: 'Questions'
             name: 'questions'
             widget: 'list'
-              fields:
-                - { label: 'Question', name: 'question', widget: 'string' }
-                - { label: 'Answer', name: 'answer', widget: 'text' }
+            fields:
+              - { label: 'Question', name: 'question', widget: 'string' }
+              - { label: 'Answer', name: 'answer', widget: 'text' }
 
 
 
