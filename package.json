@@ -7,6 +7,7 @@
     "watch": "eleventy --serve --port=3000",
     "watch-debug": "DEBUG=Eleventy* eleventy --serve --port=3000",
     "translate": "static-i18n -l en -i en -i fr -o _site _site",
+    "build": "concurrently \"npm run assets\" \"eleventy\"",
     "assets": "webpack -p --watch"
   },
   "dependencies": {
