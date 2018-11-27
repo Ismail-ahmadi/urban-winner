@@ -2,7 +2,7 @@
 title: Frequently Asked Questions
 slug: faq
 tags: nav
-summary: A list of questions about our business.
+layout: faq
 questions:
   - answer: >-
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem pariatur
@@ -17,4 +17,3 @@ questions:
       Donec lacinia congue felis in faucibus.
     question: Another Question
 ---
-

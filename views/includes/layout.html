@@ -5,7 +5,7 @@
   {% include 'includes/header.html' %}
 
   <main class="wrapper">
-    {% if content == '' %}
+    {% if layout != 'faq' and content == '' %}
       {% include 'includes/empty.html' %}
     {% else %}
       {% block content %}{% endblock %}

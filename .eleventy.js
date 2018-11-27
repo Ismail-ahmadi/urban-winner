@@ -12,7 +12,7 @@ module.exports = eleventyConfig => {
     </svg>
   `);
 
-  // eleventyConfig.addFilter('myFilter', (val, arg1, arg2) => val + arg1 + arg2);
+  // eleventyConfig.addFilter('log', val => console.log(val));
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {

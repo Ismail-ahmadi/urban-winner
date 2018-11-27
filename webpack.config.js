@@ -40,7 +40,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   plugins: [
-    new CleanWebpackPlugin(['./themes/default/source/dist']),
+    new CleanWebpackPlugin(['./assets/dist', './_site']),
     new MiniCssExtractPlugin({
       filename: 'style.css',
     }),
