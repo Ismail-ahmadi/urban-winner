@@ -1,7 +1,7 @@
 ---
-title: FAQ
+title: Page One Title 
 slug: one
-summary: Some questions and answer about our business
+summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 ---
 ## Hey
 
