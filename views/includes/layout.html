@@ -1,19 +1,18 @@
 {% include 'includes/head.html' %}
 
-<body>
-  {% include 'includes/svg.html' %}
-  {% include 'includes/header.html' %}
+{% include 'includes/svg.html' %}
+{% include 'includes/header.html' %}
 
-  <main class="wrapper">
-    {% if layout != 'faq' and content == '' %}
-      {% include 'includes/empty.html' %}
-    {% else %}
-      {% block content %}{% endblock %}
-    {% endif %}
-  </main>
+<main class="wrapper">
+  {% if layout != 'faq' and content == '' %}
+    {% include 'includes/empty.html' %}
+  {% else %}
+    {% block content %}{% endblock %}
+  {% endif %}
+</main>
 
-  {% include 'includes/footer.html' %}
-  {% include 'includes/scripts.html' %}
+{% include 'includes/footer.html' %}
+{% include 'includes/scripts.html' %}
+
 </body>
-
 </html>
