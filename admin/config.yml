@@ -2,14 +2,14 @@ backend:
   name: git-gateway
   branch: master
 
-# display_url: 
-# logo_url: 
+display_url: https://miloandfinn.netlify.com
+logo_url: https://miloandfinn.netlify.com/assets/favicons/android-chrome-384x384.png
 public_folder: '/images'
 media_folder: 'source/images'
-# media_library:
-#   name: uploadcare
-#   config:
-#     publicKey: 
+media_library:
+  name: uploadcare
+  config:
+    publicKey: 9f0b2b6f1d82d63f1332
 
 collections:
   - name: 'pages'
