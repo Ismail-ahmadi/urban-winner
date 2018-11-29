@@ -16,9 +16,5 @@ questions:
       tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
       Donec lacinia congue felis in faucibus.
     question: What is your address?
-  - answer: >-
-      No not really.
-    question: Any other questions?
-  - answer: Answer me please
-    question: Sample Question
 ---
+
