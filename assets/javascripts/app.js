@@ -5,7 +5,7 @@ import '../stylesheets/style.scss';
 
 // Static site - Homework 4 code below
 axios.post(
-  site.url,
+  `${site.url}/one`,
   qs.stringify({
     name: 'Axios',
     email: 'axios@gmail.com',
