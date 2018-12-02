@@ -5,4 +5,5 @@ module.exports = {
   url: 'https://miloandfinn.netlify.com',
   themeColor: '#fb1',
   skipEmpty: ['faq', 'home'],
+  formName: 'Comments',
 };
