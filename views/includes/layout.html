@@ -4,11 +4,13 @@
 {% include 'includes/header.html' %}
 
 <main class="wrapper">
-  {% if layout != 'home' and content == '' %}
-    {% include 'includes/empty.html' %}
-  {% else %}
-    {% block content %}{% endblock %}
-  {% endif %}
+  {% unless site.skipEmpty contains layout %}
+    {% if content == '' %}
+      {% include 'includes/empty.html' %}
+    {% else %}
+      {% block content %}{% endblock %}
+    {% endif %}
+  {% endunless %}
 </main>
 
 {% include 'includes/footer.html' %}

@@ -4,4 +4,5 @@ module.exports = {
   title: 'Welcome to our site',
   url: 'https://miloandfinn.netlify.com',
   themeColor: '#fb1',
+  skipEmpty: ['faq', 'home'],
 };
