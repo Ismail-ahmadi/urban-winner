@@ -1,3 +1,3 @@
 import '../stylesheets/style.scss';
 
-console.log('Hello World');
+// Static site - Homework 4 code below
