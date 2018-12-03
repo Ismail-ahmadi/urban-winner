@@ -49,7 +49,7 @@ collections:
     files:
       - label: 'Site Settings'
         name: 'settings'
-        file: 'config/site.json'
+        file: 'config/site.js'
         fields:
           - label: 'General'
             name: general
