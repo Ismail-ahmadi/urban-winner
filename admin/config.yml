@@ -56,11 +56,11 @@ collections:
       #   widget: 'list'
       #   hint: "Comma separated values and must include 'event'. For example: event, tech, food, sport"
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - label: "Tags"
-        name: "tags"
-        widget: "select"
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'select'
         multiple: true
-        options: ["event", "tech", "sport", "food"]
+        options: ['Design', 'UX', 'Dev']
     
   - name: 'settings'
     label: 'Settings'
