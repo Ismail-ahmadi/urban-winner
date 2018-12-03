@@ -4,7 +4,8 @@
     "lang": "en",
     "title": "Welcome to my website",
     "url": "https://miloandfinn.netlify.com",
-    "themeColor": "#c0ffee"
+    "themeColor": "#c0ffee",
+    "skipEmpty": ["home", "faq"]
   },
   "form": {
     "name": "Comments"
