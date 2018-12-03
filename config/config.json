@@ -1,12 +1,12 @@
 {
-  "site": {
-    "name": "Milo & Finn",
-    "lang": "en",
-    "title": "Welcome to my website",
-    "url": "https://miloandfinn.netlify.com",
-    "themeColor": "#fb1",
-    "skipEmpty": ["home", "faq", "events"],
-    "admin": "admin@email.com",
-    "logoOrientation": "left"
-  }
+    "site": {
+        "name": "Milo & Finn",
+        "lang": "en",
+        "title": "Welcome to my website",
+        "url": "https://miloandfinn.netlify.com",
+        "themeColor": "#fb1",
+        "skipEmpty": ["home", "faq", "events"],
+        "admin": "admin@email.com",
+        "logoOrientation": "right"
+    }
 }
