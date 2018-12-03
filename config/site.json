@@ -1,9 +1,12 @@
 {
-  "lang": "en",
-  "name": "Milo & Finn",
-  "title": "Welcome to our site",
-  "url": "https://miloandfinn.netlify.com",
-  "themeColor": "#fb1",
-  "skipEmpty": ["faq", "home"],
-  "formName": "Comments"
+  "general": {
+    "name": "Milo & Finn",
+    "lang": "en",
+    "title": "Welcome to my website",
+    "url": "https://miloandfinn.netlify.com",
+    "themeColor": "#c0ffee"
+  },
+  "form": {
+    "name": "Comments"
+  }
 }
