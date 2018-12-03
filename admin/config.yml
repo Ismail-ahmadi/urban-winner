@@ -23,7 +23,7 @@ collections:
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
           - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'one' }
-          - { label: 'Summary', name: 'summary', hint: 'I am a field hint', widget: 'text' }
+          - { label: 'Summary', name: 'summary', widget: 'text' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       
       - label: 'FAQ'
@@ -40,16 +40,24 @@ collections:
             fields:
               - { label: 'Question', name: 'question', widget: 'string' }
               - { label: 'Answer', name: 'answer', widget: 'text' }
-              
-  # - name: 'posts'
-  #   label: 'Posts'
-  #   label_singular: 'Post'
-  #   editor:
-  #     preview: false
-  #   description: The description is a great place for high level information, and editing guidelines that are specific to this collection.
-  #   create: true
-  #   folder: 'posts'
-  #   slug: '{{slug}}'
-  #   fields:
-  #     - { label: 'Title', name: 'title', widget: 'string' }
-  #     - { label: 'Body', name: 'body', widget: 'markdown' }
+    
+  - name: 'settings'
+    label: 'Settings'
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: 'Site Settings'
+        name: 'settings'
+        file: 'config/site.json'
+        fields:
+          - label: 'General'
+            name: general
+            widget: 'object'
+            fields:
+              - { label: 'Language', name: 'lang', widget: 'string' }
+          - label: 'Form'
+            name: form
+            widget: 'object'
+            fields:
+              - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
