@@ -4,13 +4,15 @@
 {% include 'includes/header.html' %}
 
 <main class="wrapper">
-  {% unless site.skipEmpty contains layout %}
+  {% if config.site.skipEmpty contains page.fileSlug %}
+    {% block content %}{% endblock %}
+  {% else %}
     {% if content == '' %}
       {% include 'includes/empty.html' %}
     {% else %}
       {% block content %}{% endblock %}
-    {% endif %}
-  {% endunless %}
+    {% endif %} 
+  {% endif %}
 </main>
 
 {% include 'includes/footer.html' %}

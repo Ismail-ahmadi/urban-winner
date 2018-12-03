@@ -4,6 +4,7 @@ import * as config from '../../config/config.json';
 import '../stylesheets/style.scss';
 
 // Static site - Homework 4 code below
+const submit = document.querySelector('.form__submit');
 const formData = {
   name: 'Milo and Finn',
   email: 'milo+finn@gmail.com',
@@ -18,4 +19,4 @@ const submitForm = data =>
     .then(_ => console.log('success'))
     .catch(_ => console.log('failed'));
 
-submitForm(formData);
+submit.addEventListener('click', submitForm(formData));

@@ -1,7 +1,8 @@
 ---
 title: Upcoming Events
 slug: events
-layout: archive
 tags: nav
 navtitle: Events
 ---
+
+<p class="lead">Find upcoming events near you</p>

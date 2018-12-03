@@ -1,8 +1,9 @@
 ---
 title: Frequently Asked Questions
 slug: faq
-layout: faq
 tags: nav
+navtitle: Questions
+summary: Some commonly asked questions about our business
 questions:
   - answer: >-
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem pariatur

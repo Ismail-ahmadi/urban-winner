@@ -1,6 +1,7 @@
 ---
-title: Page One Title 
+title: About Us
 slug: one
+tags: nav
 summary: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 ---
 ## Hey

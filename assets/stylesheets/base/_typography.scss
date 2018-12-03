@@ -49,6 +49,10 @@ strong {
   font-weight: $font-weight-bold;
 }
 
+.normal {
+  font-weight: $font-weight-normal;
+}
+
 // Decorations
 .lead {
   text: $gray-500 italic $font-weight-normal $font-size-large 1.425;

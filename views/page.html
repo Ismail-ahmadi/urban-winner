@@ -10,11 +10,17 @@
       <span class="h6 spaced caps faint">{{ author }}</span>
     {% endif %}
 
-    <p class="lead">{{ summary }}</p>
+    {% if summary %}<p class="lead">{{ summary }}</p>{% endif %}
+  
+    {{ content }}
     
-    <div class="container container--text">
-      {{ content }}
-    </div>
+    {% case page.fileSlug %}
+      {% when 'faq' %}
+        {% include 'components/accordion.html' %}
+      {% when 'events' %}
+        {% include 'components/grid.html' %}
+    {% endcase %}
+
   </div>
   
 {% endblock %}
