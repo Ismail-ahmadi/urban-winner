@@ -25,7 +25,6 @@ collections:
           - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'one' }
           - { label: 'Summary', name: 'summary', widget: 'text' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
-      
       - label: 'FAQ'
         name: 'faq'
         file: 'pages/faq.md'
@@ -59,6 +58,8 @@ collections:
               - { label: 'Default Title', name: 'title', widget: 'string'}
               - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://'}
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
+              - { label: 'Theme Color', name: 'themeColor', widget: 'string'}
+              - { label: 'Logo Orientation', name: 'logoOrientation', widget: 'select', options: ['left', 'right'] }
           # - label: 'Form'
           #   name: form
           #   widget: 'object'

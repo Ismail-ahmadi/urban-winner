@@ -4,8 +4,9 @@
     "lang": "en",
     "title": "Welcome to my website",
     "url": "https://miloandfinn.netlify.com",
-    "themeColor": "#c0ffee",
+    "themeColor": "#fb1",
     "skipEmpty": ["home", "faq", "events"],
-    "admin": "admin@email.com"
+    "admin": "admin@email.com",
+    "logoOrientation": "right"
   }
 }
