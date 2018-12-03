@@ -15,8 +15,8 @@
     {{ content }}
     
     {% case page.fileSlug %}
-      {% when 'faq' %}
-        {% include 'components/accordion.html' %}
+      {% comment %} {% when 'faq' %}
+        {% include 'components/accordion.html' %} {% endcomment %}
       {% when 'events' %}
         {% include 'components/grid.html' %}
     {% endcase %}

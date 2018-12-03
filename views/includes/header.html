@@ -1,4 +1,10 @@
-<header {% if config.site.logoOrientation == 'right' %} class="header header--reverse container" {% else %} class="header container" {% endif %}>
+<header 
+  {% if config.site.logoOrientation == 'right' %} 
+    class="header header--reverse container" 
+  {% else %} 
+    class="header container" 
+  {% endif %}
+>
   <a href="{{ config.site.url }}" class="logo">
     {% Icon 'logo' %}
   </a>
@@ -6,17 +12,15 @@
   <nav class="menu" role="navigation">
 
     {% for item in collections.nav %}
-
       {% if item.url == page.url %}
         {% assign class = 'menu__link menu__link--active' %}
       {% else %}
         {% assign class = 'menu__link' %}
       {% endif %}
-      
       <a href="{{ item.url }}" class="{{ class }}">
         {{ item.data.navtitle | default: item.data.title }}
       </a>
-
     {% endfor %}
+
   </nav>
 </header>
