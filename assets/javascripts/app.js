@@ -13,6 +13,7 @@ const formData = {
 
 const handleSubmit = e => {
   e.preventDefault();
+  console.log('prevented');
   axios
     .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }))
     .then(_ => console.log('success'))
