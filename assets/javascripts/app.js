@@ -19,4 +19,4 @@ const submitForm = data =>
     .then(_ => console.log('success'))
     .catch(_ => console.log('failed'));
 
-submit.addEventListener('click', submitForm(formData));
+// submit.addEventListener('click', submitForm(formData));

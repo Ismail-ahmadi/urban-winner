@@ -7,6 +7,9 @@
         "themeColor": "#fb1",
         "skipEmpty": ["home", "faq", "events"],
         "admin": "admin@email.com",
-        "logoOrientation": "right"
+        "logoOrientation": "left"
+    },
+    "form": {
+        "name": "Test"
     }
 }

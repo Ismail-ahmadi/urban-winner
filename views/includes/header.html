@@ -1,16 +1,14 @@
-<header 
-  {% if config.site.logoOrientation == 'right' %} 
-    class="header header--reverse container" 
-  {% else %} 
-    class="header container" 
-  {% endif %}
->
+{% if config.site.logoOrientation == 'right' %} 
+  {% assign class = 'container header header--reverse' %} 
+{% else %} 
+  {% assign class = 'container header' %} 
+{% endif %}
+
+<header class="{{ class }}">
   <a href="{{ config.site.url }}" class="logo">
     {% Icon 'logo' %}
   </a>
-
   <nav class="menu" role="navigation">
-
     {% for item in collections.nav %}
       {% if item.url == page.url %}
         {% assign class = 'menu__link menu__link--active' %}
@@ -21,6 +19,5 @@
         {{ item.data.navtitle | default: item.data.title }}
       </a>
     {% endfor %}
-
   </nav>
 </header>
