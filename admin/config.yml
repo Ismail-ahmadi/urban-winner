@@ -49,8 +49,12 @@ collections:
     fields:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Date', name: 'date', widget: 'date'}
+      - {label: 'Location', name: 'location', widget: 'string'}
       - {label: 'Image', name: 'image', widget: 'image', required: false}
       - {label: 'Body', name: 'body', widget: 'markdown'}
+      - label: 'Tags'
+        name: 'tags'
+        widget: 'list'
     
   - name: 'settings'
     label: 'Settings'
