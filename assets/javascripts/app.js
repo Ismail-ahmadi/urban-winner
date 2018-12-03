@@ -1,10 +1,10 @@
 import qs from 'qs';
 import axios from 'axios';
-import site from '../../config/site';
+import * as config from '../../config/site.json';
 import '../stylesheets/style.scss';
 
 // Static site - Homework 4 code below
-const data = {
+const formData = {
   name: 'Milo and Finn',
   email: 'milo+finn@gmail.com',
   role: 'follower',
@@ -14,6 +14,8 @@ const data = {
 
 const submitForm = data =>
   axios
-    .post(site.url, qs.stringify({ 'form-name': site.formName, ...data }))
+    .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...data }))
     .then(_ => console.log('success'))
     .catch(_ => console.log('failed'));
+
+submitForm(formData);

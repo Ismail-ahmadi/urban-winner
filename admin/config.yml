@@ -49,11 +49,19 @@ collections:
     files:
       - label: 'Site Settings'
         name: 'settings'
-        file: 'config/site.json'
+        file: 'config/config.json'
         fields:
-          - { label: 'Site Name', name: 'name', widget: 'string' }
-          - { label: 'Language', name: 'lang', widget: 'string' }
-          - { label: 'Default Title', name: 'title', widget: 'string' }
-          - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://' }
-          - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff' }
-          - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
+          - label: 'General'
+            name: site
+            widget: 'object'
+            fields:
+              - { label: 'Site Name', name: 'name', widget: 'string' }
+              - { label: 'Language', name: 'lang', widget: 'string' }
+              - { label: 'Default Title', name: 'title', widget: 'string' }
+              - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://' }
+              - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff' }
+          - label: 'Form'
+            name: form
+            widget: 'object'
+            fields:
+              - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
