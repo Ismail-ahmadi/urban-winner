@@ -7,8 +7,5 @@
     "themeColor": "#c0ffee",
     "skipEmpty": ["home", "faq", "events"],
     "admin": "admin@email.com"
-  },
-  "form": {
-    "name": "Comments"
   }
 }
