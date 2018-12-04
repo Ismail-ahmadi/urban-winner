@@ -27,29 +27,36 @@
   </div>
   <div>
     <label>
-      <input type="checkbox" name="topics" value="HTML">
+      <input type="checkbox" name="topic[]" value="HTML">
       <span class="spaced caps h6 bold">HTML</span>
     </label>
     <label>
-      <input type="checkbox" name="topics" value="CSS">
+      <input type="checkbox" name="topic[]" value="CSS">
       <span class="spaced caps h6 bold">CSS</span>
     </label>
     <label>
-      <input type="checkbox" name="topics" value="Javascript">
+      <input type="checkbox" name="topic[]" value="Javascript">
       <span class="spaced caps h6 bold">Javascript</span>
     </label>
     <label>
-      <input type="checkbox" name="topics" value="Layout">
+      <input type="checkbox" name="topic[]" value="Layout">
       <span class="spaced caps h6 bold">Layout</span>
     </label>
     <label>
-      <input type="checkbox" name="topics" value="Code">
+      <input type="checkbox" name="topic[]" value="Code">
       <span class="spaced caps h6 bold">Code</span>
     </label>
     <label>
-      <input type="checkbox" name="topics" value="Design">
+      <input type="checkbox" name="topic[]" value="Design">
       <span class="spaced caps h6 bold">Design</span>
     </label>
   </div>
+  <label>
+    Fruits: 
+    <select name="fruit[]" multiple>
+      <option value="leader">Orange</option>
+      <option value="follower">Banana</option>
+    </select>
+  </label>
   <button type="submit">Submit</button>
 </form>
