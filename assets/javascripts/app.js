@@ -23,4 +23,4 @@ const handleSubmit = e => {
     .catch(_ => console.log('failed'));
 };
 
-form.addEventListener('submit', handleSubmit);
+// form.addEventListener('submit', handleSubmit);

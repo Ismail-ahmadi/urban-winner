@@ -1,4 +1,4 @@
-<form name="{{ config.form.name }}" class="form" netlify>
+<form name="{{ config.form.name }}" class="form" method="post" netlify>
   <label>
     Name
     <input type="text" name="name" placeholder="Enter your name" required>
@@ -27,28 +27,16 @@
   </div>
   <div>
     <label>
-      <input type="checkbox" name="topic" value="HTML">
+      <input type="checkbox" name="topic[]" value="HTML">
       <span class="spaced caps h6 bold">HTML</span>
     </label>
     <label>
-      <input type="checkbox" name="topic" value="CSS">
+      <input type="checkbox" name="topic[]" value="CSS">
       <span class="spaced caps h6 bold">CSS</span>
     </label>
     <label>
-      <input type="checkbox" name="topic" value="Javascript">
+      <input type="checkbox" name="topic[]" value="Javascript">
       <span class="spaced caps h6 bold">Javascript</span>
-    </label>
-    <label>
-      <input type="checkbox" name="topic" value="Layout">
-      <span class="spaced caps h6 bold">Layout</span>
-    </label>
-    <label>
-      <input type="checkbox" name="topic" value="Code">
-      <span class="spaced caps h6 bold">Code</span>
-    </label>
-    <label>
-      <input type="checkbox" name="topic" value="Design">
-      <span class="spaced caps h6 bold">Design</span>
     </label>
   </div>
   <button type="submit">Submit</button>
