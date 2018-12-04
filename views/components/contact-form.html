@@ -1,14 +1,55 @@
-<form name="{{ config.form.name }}" class="form" netlify>
-  <p>
-    <label>Your Name: <input type="text" name="name" /></label>   
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email" /></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+<form name="{{ config.form.name }}" method="post" class="form" netlify>
+  <label>
+    Name
+    <input type="text" name="name" placeholder="Enter your name" required>
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" placeholder="your@email.com" required>
+  </label>
+  <label>
+    Comment
+    <textarea name="comment" placeholder="Enter some comment" required></textarea>
+  </label>
+  <div>
+    <label>
+      <input type="radio" name="priority" value="Critical">
+      <span class="spaced caps h6 bold">Critical</span>
+    </label>
+    <label>
+      <input type="radio" name="priority" value="Medium">
+      <span class="spaced caps h6 bold">Medium</span>
+    </label>
+    <label>
+      <input type="radio" name="priority" value="Low">
+      <span class="spaced caps h6 bold">Low</span>
+    </label>
+  </div>
+  <div>
+    <label>
+      <input type="checkbox" name="topics" value="HTML">
+      <span class="spaced caps h6 bold">HTML</span>
+    </label>
+    <label>
+      <input type="checkbox" name="topics" value="CSS">
+      <span class="spaced caps h6 bold">CSS</span>
+    </label>
+    <label>
+      <input type="checkbox" name="topics" value="Javascript">
+      <span class="spaced caps h6 bold">Javascript</span>
+    </label>
+    <label>
+      <input type="checkbox" name="topics" value="Layout">
+      <span class="spaced caps h6 bold">Layout</span>
+    </label>
+    <label>
+      <input type="checkbox" name="topics" value="Code">
+      <span class="spaced caps h6 bold">Code</span>
+    </label>
+    <label>
+      <input type="checkbox" name="topics" value="Design">
+      <span class="spaced caps h6 bold">Design</span>
+    </label>
+  </div>
+  <button type="submit">Submit</button>
 </form>

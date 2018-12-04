@@ -1,23 +1,24 @@
 import qs from 'qs';
 import axios from 'axios';
-import * as config from '../../config/config.json';
 import '../stylesheets/style.scss';
+import * as config from '../../config/config.json';
 
-// Static site - Homework 4 code below
 const form = document.querySelector('.form');
+
+// 👇 Write homework code here
+
 const formData = {
-  name: 'Milo and Finn',
-  email: 'milo+finn@gmail.com',
-  message: 'Testing',
+  name: 'Milo',
 };
+
+// 👆 Write homework code here
 
 const handleSubmit = e => {
   e.preventDefault();
-  console.log('prevented');
   axios
-    .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }))
+    .post(config.site.url, qs.stringify({ 'form-name': 'Comments', ...formData }))
     .then(_ => console.log('success'))
     .catch(_ => console.log('failed'));
 };
 
-form.addEventListener('submit', handleSubmit);
+// form.addEventListener('submit', handleSubmit);
