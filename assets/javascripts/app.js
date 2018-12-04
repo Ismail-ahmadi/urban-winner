@@ -11,7 +11,7 @@ const formData = {
   email: 'test@email.com',
   comment: 'This is my comment',
   priority: 'Low',
-  topics: ['HTML', 'CSS', 'Javascript'],
+  topic: ['HTML', 'CSS', 'Javascript'],
 };
 // 👆 Write homework code here
 
