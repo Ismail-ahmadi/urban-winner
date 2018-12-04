@@ -18,7 +18,7 @@ const formData = {
 const handleSubmit = e => {
   e.preventDefault();
   axios
-    .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }))
+    .post(config.site.url, qs.stringify({ 'form-name': config.form.name, ...formData }, { arrayFormat: 'brackets' }))
     .then(_ => console.log('success'))
     .catch(_ => console.log('failed'));
 };
