@@ -1,8 +1,8 @@
 ---
 title: This is my first post
-date: 2015-01-01
+date: 2015-01-01T00:00:00.000Z
 location: Jakarta
-image: https://cdn.dribbble.com/users/966188/screenshots/4832657/1_01.jpg
+image: 'https://ucarecdn.com/9bd94622-c330-4a12-831d-21a53543bb5c/'
 tags:
   - event
   - tech
