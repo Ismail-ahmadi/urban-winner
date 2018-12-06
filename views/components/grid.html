@@ -1,6 +1,7 @@
 <div class="grid">
   {% for event in collections.event %} 
     <a class="grid__item" href="{{ event.url }}" style="background: url({{ event.data.image }})">
+      <div class="grid__overlay"></div>
       <div>
         <time>
           {% Icon 'clock' %} 
