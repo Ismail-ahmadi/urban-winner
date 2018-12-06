@@ -75,11 +75,37 @@ collections:
               - { label: 'Language', name: 'lang', widget: 'string'}
               - { label: 'Default Title', name: 'title', widget: 'string'}
               - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://'}
+              - { label: 'Description', name: 'description', widget: 'string' }
+              - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
-              - { label: 'Theme Color', name: 'themeColor', widget: 'string'}
-              - { label: 'Logo Orientation', name: 'logoOrientation', widget: 'select', options: ['left', 'right'] }
-          # - label: 'Form'
-          #   name: form
-          #   widget: 'object'
-          #   fields:
-          #     - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
+              - label: 'Locales'
+                name: 'locales'
+                widget: 'object'
+                fields: 
+                  - { label: 'English', name: 'en', widget: 'string', default: '/en' }
+                  - { label: 'French', name: 'fr', widget: 'string', default: '/fr' }
+          - label: 'Social'
+            name: 'social'
+            widget: 'object'
+            fields:
+              - { label: 'Facebook Page', name: 'facebook', widget: 'string', required: false }
+              - { label: 'Twitter', name: 'twitter', widget: 'string', required: false }
+              - { label: 'Instagram', name: 'instagram', widget: 'string', required: false }
+          - label: 'Analytics'
+            name: 'analytics'
+            widget: 'object'
+            fields:
+              - { label: 'Facebook App ID', name: 'facebook', widget: 'string', required: false }
+              - { label: 'Twitter Handle', name: 'twitter', widget: 'string', required: false }
+              - { label: 'Google Tracking ID', name: 'google', widget: 'string', required: false, hint: 'Starts with GTM- ...' }
+          - label: 'Form'
+            name: 'form'
+            widget: 'object'
+            fields:
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+          - label: 'Fallback Images'
+            name: 'fallback'
+            widget: 'object'
+            fields:
+              - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }

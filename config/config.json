@@ -4,12 +4,30 @@
         "lang": "en",
         "title": "Welcome to my website",
         "url": "https://miloandfinn.netlify.com",
+        "description": "",
         "themeColor": "#fb1",
         "skipEmpty": ["home", "faq", "events"],
-        "admin": "admin@email.com",
-        "logoOrientation": "left"
+        "webmaster": "admin@email.com",
+        "locales": {
+            "en": "/en",
+            "fr": "/fr"
+        }
+    },
+    "social": {
+        "facebook": "https://facebook.com/miloandfinn",
+        "twitter": "https://twitter.com/miloandfinn",
+        "instagram": "https://instagram.com/miloandfinn"
+    },
+    "analytics": {
+        "google": "GTM-KF5SH47",
+        "twitter": "handle",
+        "facebook": "1234567890"
     },
     "form": {
         "name": "Red"
+    },
+    "fallback": {
+        "image": "https://uploads-ssl.webflow.com/5bff8886c3964a992e90d465/5c00621b7aefa4f9ee0f4303_wide-shot.svg",
+        "thumbnail": "https://uploads-ssl.webflow.com/5bff8886c3964a992e90d465/5c00621b7aefa4f9ee0f4303_wide-shot.svg"
     }
 }
