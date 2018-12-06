@@ -2,7 +2,7 @@
 title: Christmas Celebration
 date: 2018-12-25T10:36:44.938Z
 location: Jakarta
-image: https://cdn.dribbble.com/users/966188/screenshots/4832657/1_01.jpg
+image: 'https://ucarecdn.com/ac9b6e86-552d-42cc-9927-b5b489fae6ef/'
 tags:
   - event
   - tech
