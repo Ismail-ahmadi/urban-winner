@@ -2,6 +2,7 @@
 title: This is my third post
 date: 2015-01-01
 location: Jakarta
+image: https://cdn.dribbble.com/users/966188/screenshots/4832657/1_01.jpg
 tags:
   - event
   - tech

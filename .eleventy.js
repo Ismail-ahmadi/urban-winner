@@ -12,7 +12,7 @@ module.exports = eleventyConfig => {
     </svg>
   `);
 
-  // eleventyConfig.addFilter('log', val => console.log(val));
+  // eleventyConfig.addFilter('makeUppercase', val => val.toUpperCase());
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
