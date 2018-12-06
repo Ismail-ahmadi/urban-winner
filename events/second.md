@@ -1,8 +1,8 @@
 ---
 title: This is my second post
-date: 2016-01-01
+date: 2016-01-01T00:00:00.000Z
 location: Bogor
-image: https://cdn.dribbble.com/users/966188/screenshots/4832657/1_01.jpg
+image: 'https://ucarecdn.com/aee80f12-18a8-4e39-a532-cc7458d139d5/'
 tags:
   - event
   - sport
