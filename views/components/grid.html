@@ -4,7 +4,7 @@
       <div>
         <time>
           {% Icon 'clock' %} 
-          <span class="h6 caps spaced">{{ event.data.date }}</span>
+          <span class="h6 caps spaced">{{ event.data.date | formatDate }}</span>
         </time>
         <span>
           {% Icon 'pin' %} 

@@ -1,3 +1,4 @@
+const day = require('dayjs');
 const htmlmin = require('html-minifier');
 
 module.exports = eleventyConfig => {
@@ -12,7 +13,7 @@ module.exports = eleventyConfig => {
     </svg>
   `);
 
-  // eleventyConfig.addFilter('makeUppercase', val => val.toUpperCase());
+  eleventyConfig.addFilter('formatDate', date => day(date).format('MMM D, YYYY'));
 
   eleventyConfig.addTransform('htmlmin', (content, outputPath) => {
     if (outputPath.endsWith('.html')) {
