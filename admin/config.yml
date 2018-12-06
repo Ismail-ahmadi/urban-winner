@@ -102,10 +102,10 @@ collections:
             name: 'form'
             widget: 'object'
             fields:
-              - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+              - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
           - label: 'Fallback Images'
             name: 'fallback'
             widget: 'object'
             fields:
-              - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
