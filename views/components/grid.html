@@ -1,5 +1,6 @@
 <div class="grid">
   {% for event in collections.event %} 
+    <pre>{{ event.url }}</pre>
     <a class="grid__item" href="{{ event.url }}" style="background: url({{ event.data.image }})">
       <div>
         <time>
