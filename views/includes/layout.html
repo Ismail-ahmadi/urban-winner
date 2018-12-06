@@ -1,5 +1,13 @@
-{% include 'includes/head.html' %}
+{% assign cover = image | default: config.fallback.image %}
+{% assign thumbnail = thumbnail | default: config.fallback.thumbnail %}
+{% assign description = summary | default: config.site.description %}
+{% if title %}
+  {% capture pageTitle %}{{ title }} | {{ config.site.title }}{% endcapture %} 
+{% else %}
+  {% assign pageTitle = config.site.title %}
+{% endif %}
 
+{% include 'includes/head.html' %}
 {% include 'includes/svg.html' %}
 {% include 'includes/header.html' %}
 
