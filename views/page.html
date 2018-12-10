@@ -4,27 +4,22 @@
 
   <div class="container">
     <h1>{{ title }}</h1>
-
-    <svg aria-hidden="true" role="presentation">
-  <use xlinkHref="#" />
-</svg>
-
     {% if author %}
       <span class="italic faint">by&nbsp;</span>
       <span class="h6 spaced caps faint">{{ author }}</span>
     {% endif %}
-
     {% if summary %}<p class="lead">{{ summary }}</p>{% endif %}
-  
+
     {{ content }}
     
     {% case page.fileSlug %}
-      {% comment %} {% when 'faq' %}
-        {% include 'components/accordion.html' %} {% endcomment %}
+      {% when 'faq' %}
+        {% include 'components/accordion.html' %}
       {% when 'events' %}
         {% include 'components/grid.html' %}
     {% endcase %}
 
+    {% include 'components/social-share.html' %}
   </div>
   
 {% endblock %}

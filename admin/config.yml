@@ -17,12 +17,23 @@ collections:
     editor:
       preview: false
     files:
-      - label: 'Page One'
-        name: 'one'
-        file: 'pages/one.md'
+      - label: 'About Us'
+        name: 'about'
+        file: 'pages/about.md'
         fields:
           - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'one' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'about' }
+          - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
+          - { label: 'Summary', name: 'summary', widget: 'text' }
+          - { label: 'Body', name: 'body', widget: 'markdown' }
+      - label: 'Tentang Kami'
+        name: 'tentang'
+        file: 'pages/tentang.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Slug', name: 'slug', widget: 'hidden', default: 'tentang-kami' }
+          - { label: 'Tags', name: 'tags', widget: 'hidden', default: 'nav' }
+          - { label: 'Lang', name: 'lang', widget: 'hidden', default: 'id' }
           - { label: 'Summary', name: 'summary', widget: 'text' }
           - { label: 'Body', name: 'body', widget: 'markdown' }
       - label: 'FAQ'

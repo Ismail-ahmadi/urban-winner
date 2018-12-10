@@ -8,6 +8,9 @@
   <a href="{{ config.site.url }}" class="logo">
     {% Icon 'logo' %}
   </a>
+  <div class="locale">
+    <button>French</button>
+  </div>
   <nav class="menu" role="navigation">
     {% for item in collections.nav %}
       {% if item.url == page.url %}
