@@ -4,10 +4,28 @@
   {% assign class = 'container header' %} 
 {% endif %}
 
+{% if lang == 'id' %}
+  {% assign currentLang = 'Bahasa' %}
+  {% assign nextLang = 'Inggris' %}
+  {% assign nextUrl = config.site.locales.en %}
+{% else %}
+  {% assign currentLang = 'English' %}
+  {% assign nextLang = 'Indonesian' %} 
+  {% assign nextUrl = config.site.locales.id %}
+{% endif %}
+
 <header class="{{ class }}">
   <a href="{{ config.site.url }}" class="logo">
     {% Icon 'logo' %}
   </a>
+
+  <div class="locale">
+    {% Icon 'globe' %}
+    <span class="h6 caps spaced faint">{{ currentLang }}</span>
+    {% Icon 'down' %}
+    <a href="{{ nextUrl }}" class="locale__dropdown h6 spaced caps faint center">{{ nextLang }}</a>
+  </div>
+
   <nav class="menu" role="navigation">
     {% if lang == 'id' %}
       {% for item in collections.navId %}
