@@ -8,19 +8,15 @@
   <a href="{{ config.site.url }}" class="logo">
     {% Icon 'logo' %}
   </a>
-  <div class="locale">
-    <button>French</button>
-  </div>
   <nav class="menu" role="navigation">
-    {% for item in collections.nav %}
-      {% if item.url == page.url %}
-        {% assign class = 'menu__link menu__link--active' %}
-      {% else %}
-        {% assign class = 'menu__link' %}
-      {% endif %}
-      <a href="{{ item.url }}" class="{{ class }}">
-        {{ item.data.navtitle | default: item.data.title }}
-      </a>
-    {% endfor %}
+    {% if lang == 'id' %}
+      {% for item in collections.navId %}
+        {% include 'components/menu-item.html' %}
+      {% endfor %}
+    {% else %}
+      {% for item in collections.nav %}
+        {% include 'components/menu-item.html' %} 
+      {% endfor %} 
+    {% endif %}
   </nav>
 </header>
