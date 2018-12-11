@@ -1,31 +1,11 @@
-{% assign cover = image | default: config.fallback.image %}
-{% assign thumbnail = thumbnail | default: config.fallback.thumbnail %}
-{% capture url %}{{ config.site.url }}{{page.url}}{% endcapture %} 
-{% assign description = summary | default: config.site.description %}
-{% if title %}
-  {% capture pageTitle %}{{ title }} | {{ config.site.name }}{% endcapture %} 
-{% else %}
-  {% assign pageTitle = config.site.title %}
-{% endif %}
-
+{% include 'includes/variables.html' %}
 {% include 'includes/head.html' %}
 {% include 'includes/svg.html' %}
 {% include 'includes/header.html' %}
 
 <main class="wrapper">
-  {% if config.site.skipEmpty contains page.fileSlug %}
-    {% block content %}{% endblock %}
-  {% else %}
-    {% if content == '' %}
-      {% include 'includes/empty.html' %}
-    {% else %}
-      {% block content %}{% endblock %}
-    {% endif %} 
-  {% endif %}
+  {% block content %}{% endblock %}
 </main>
 
 {% include 'includes/footer.html' %}
 {% include 'includes/scripts.html' %}
-
-</body>
-</html>

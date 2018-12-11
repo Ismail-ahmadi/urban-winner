@@ -1,0 +1,8 @@
+{% assign nextUrl = config.locales[locale.next].url %}
+
+<div class="locale">
+  {% Icon 'globe' %}
+  <span class="h6 caps spaced faint">{{ langID | t: lang}}</span>
+  {% Icon 'down' %}
+  <a href="{{ nextUrl }}" class="locale__dropdown h6 spaced caps faint center">{{ locale.next | t: lang}}</a>
+</div>

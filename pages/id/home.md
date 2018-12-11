@@ -1,6 +1,5 @@
 ---
 layout: home
-lang: id
 permalink: /{{ lang }}/
 ---
 

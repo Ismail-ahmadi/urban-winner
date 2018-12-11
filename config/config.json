@@ -7,10 +7,16 @@
         "description": "The description about this website",
         "themeColor": "#fb1",
         "skipEmpty": ["home", "faq", "events"],
-        "webmaster": "admin@email.com",
-        "locales": {
-            "en": "/",
-            "id": "/id"
+        "webmaster": "admin@email.com"
+    },
+    "locales": {
+        "en": {
+            "url": "/",
+            "next": "id"
+        },
+        "id": {
+            "url": "/id",
+            "next": "en"
         }
     },
     "social": {

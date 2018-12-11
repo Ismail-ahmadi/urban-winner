@@ -1,8 +1,7 @@
 ---
 title: Tentang Kami
 slug: tentang-kami
-tags: navId
-lang: id
+tags: nav
 summary: 'Penghasilan Rp 100 Jutaan Per Hari, Kisah Juragan Lele di Indramayu'
 ---
 ## Tentang Kami

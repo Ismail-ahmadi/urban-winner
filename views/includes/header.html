@@ -1,40 +1,9 @@
-{% if config.site.logoOrientation == 'right' %} 
-  {% assign class = 'container header header--reverse' %} 
-{% else %} 
-  {% assign class = 'container header' %} 
-{% endif %}
+<header class="container header">
+  <a href="{{ locale.url }}" class="logo">{% Icon 'logo' %}</a>
 
-{% if lang == 'id' %}
-  {% assign currentLang = 'Bahasa' %}
-  {% assign nextLang = 'Inggris' %}
-  {% assign nextUrl = config.site.locales.en %}
-{% else %}
-  {% assign currentLang = 'English' %}
-  {% assign nextLang = 'Indonesian' %} 
-  {% assign nextUrl = config.site.locales.id %}
-{% endif %}
-
-<header class="{{ class }}">
-  <a href="{{ config.site.url }}" class="logo">
-    {% Icon 'logo' %}
-  </a>
-
-  <div class="locale">
-    {% Icon 'globe' %}
-    <span class="h6 caps spaced faint">{{ currentLang }}</span>
-    {% Icon 'down' %}
-    <a href="{{ nextUrl }}" class="locale__dropdown h6 spaced caps faint center">{{ nextLang }}</a>
-  </div>
+  {% include 'components/locale.html' %}
 
   <nav class="menu" role="navigation">
-    {% if lang == 'id' %}
-      {% for item in collections.navId %}
-        {% include 'components/menu-item.html' %}
-      {% endfor %}
-    {% else %}
-      {% for item in collections.nav %}
-        {% include 'components/menu-item.html' %} 
-      {% endfor %} 
-    {% endif %}
+    {% include 'components/menu-items.html' %}
   </nav>
 </header>
