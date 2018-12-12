@@ -6,8 +6,6 @@ image:
   - 'https://ucarecdn.com/305d5af7-e856-4c1a-b35b-5e306d64e889~3/nth/0/'
   - 'https://ucarecdn.com/305d5af7-e856-4c1a-b35b-5e306d64e889~3/nth/1/'
   - 'https://ucarecdn.com/305d5af7-e856-4c1a-b35b-5e306d64e889~3/nth/2/'
-tags:
-  - event
 ---
 
 ### Merry Christmas!

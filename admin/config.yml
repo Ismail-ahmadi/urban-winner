@@ -15,7 +15,7 @@ media_library:
 
 collections:
   - name: 'pages'
-    label: 'Pages'
+    label: 'Pages (English & Indonesian)'
     editor:
       preview: false
     files:
@@ -57,6 +57,27 @@ collections:
     editor:
       preview: false
     folder: 'events'
+    create: true
+    slug: '{{slug}}'
+    fields:
+      - {label: 'Title', name: 'title', widget: 'string'}
+      - {label: 'Date', name: 'date', widget: 'date'}
+      - {label: 'Location', name: 'location', widget: 'string'}
+      - label: 'Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        media_library:
+          config:
+            multiple: true
+            previewStep: false
+      - {label: 'Body', name: 'body', widget: 'markdown'}
+
+  - name: 'events-id'
+    label: 'Events (Indonesian)'
+    editor:
+      preview: false
+    folder: 'events/id'
     create: true
     slug: '{{slug}}'
     fields:
