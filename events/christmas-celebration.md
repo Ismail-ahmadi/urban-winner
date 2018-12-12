@@ -2,10 +2,9 @@
 title: Christmas Celebration
 date: 2018-12-25T10:36:44.938Z
 location: Jakarta
-image:
-  - 'https://ucarecdn.com/305d5af7-e856-4c1a-b35b-5e306d64e889~3/nth/0/'
-  - 'https://ucarecdn.com/305d5af7-e856-4c1a-b35b-5e306d64e889~3/nth/1/'
-  - 'https://ucarecdn.com/305d5af7-e856-4c1a-b35b-5e306d64e889~3/nth/2/'
+image: 'https://ucarecdn.com/81570263-04f8-46d1-944e-14fc6fdfd3fd/'
+gallery:
+  - 'https://ucarecdn.com/82b2624a-cb8a-4f74-856c-b9651428c020~1/nth/0/'
 ---
 
 ### Merry Christmas!
