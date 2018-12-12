@@ -1,18 +1,21 @@
 <div class="grid">
   {% for event in collections.event %} 
-    <a class="grid__item" href="{{ event.url }}" style="background: url({{ event.data.image }})">
-      <div class="grid__overlay"></div>
-      <div>
-        <time>
-          {% Icon 'clock' %} 
-          <span class="h6 caps spaced">{{ event.data.date | formatDate }}</span>
-        </time>
-        <span>
-          {% Icon 'pin' %} 
-          <span class="h6 caps spaced">{{ event.data.location }}</span>
-        </span> 
-      </div>
-      <h4 class="h2 white">{{ event.data.title }}</h4>
-    </a>
+    {% assign eventLangID = event.inputPath | getLang %}
+    {% if eventLangID == langID %}
+      <a class="grid__item" href="{{ event.url }}" style="background-image: url({{ event.data.image | getImageUrl: 400 }})">
+        <div class="grid__overlay"></div>
+        <div>
+          <time>
+            {% Icon 'clock' %} 
+            <span class="h6 caps spaced">{{ event.data.date | formatDate }}</span>
+          </time>
+          <span>
+            {% Icon 'pin' %} 
+            <span class="h6 caps spaced">{{ event.data.location }}</span>
+          </span> 
+        </div>
+        <h4 class="h2 white">{{ event.data.title }}</h4>
+      </a>
+    {% endif %}
   {% endfor %}
 </div>

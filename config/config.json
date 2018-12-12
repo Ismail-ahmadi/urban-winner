@@ -12,11 +12,13 @@
     "locales": {
         "en": {
             "url": "/",
-            "next": "id"
+            "next": "id",
+            "name": "en_US"
         },
         "id": {
             "url": "/id",
-            "next": "en"
+            "next": "en",
+            "name": "id_ID"
         }
     },
     "social": {

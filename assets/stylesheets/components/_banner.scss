@@ -1,0 +1,9 @@
+.banner {
+  margin-top: $s;
+  margin-bottom: $s*3;
+
+  img {
+    max-height: $s*30;
+    object-fit: cover;
+  }
+}

@@ -1,5 +1,5 @@
 {
+  "tags": "event",
   "layout": "event",
-  "permalink": "events/{{ title | slug }}/index.html",
-  "tags": "event"
+  "permalink": "/events/{{ title | slug }}/index.html"
 }

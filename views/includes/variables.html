@@ -2,9 +2,9 @@
 
 {% assign locale = config.locales[langID] %}
 
-{% assign cover = image | default: config.fallback.image %}
+{% assign cover = image | default: config.fallback.image | getImageUrl: 1400 %}
 
-{% assign thumbnail = thumbnail | default: config.fallback.thumbnail %}
+{% assign thumbnail = image | default: config.fallback.image | getImageUrl: 200 %}
 
 {% capture url %}{{ config.site.url }}{{page.url}}{% endcapture %} 
 

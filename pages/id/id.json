@@ -1,5 +1,4 @@
 {
-  "lang": "id",
   "layout": "page",
-  "permalink": "/{{ lang }}/{{ slug | slug }}/index.html"
+  "permalink": "/id/{{ slug | slug }}/index.html"
 }

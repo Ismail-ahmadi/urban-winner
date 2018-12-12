@@ -1,6 +1,10 @@
 .share {
   display: inline-flex;
 
+  &__heading {
+    margin-top: $s*2;
+  }
+
   &__button {
     box: horizontal center middle;
     padding: $q;

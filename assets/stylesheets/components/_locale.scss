@@ -1,7 +1,7 @@
 .locale {
   box: horizontal middle space-between;
   position: relative;
-  margin-right: auto;
+  margin: 0 auto 0 $s*1.5;
   padding: $h $s;
   color: $gray-800;
   background-color: $gray-200;

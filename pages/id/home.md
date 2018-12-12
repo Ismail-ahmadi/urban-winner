@@ -1,6 +1,6 @@
 ---
 layout: home
-permalink: /{{ lang }}/
+permalink: /id/ 
 ---
 
 # Selamat Datang
