@@ -71,10 +71,6 @@ collections:
           config:
             multiple: true
             previewStep: false
-      - label: 'Tags'
-        name: 'tags'
-        widget: 'list'
-        hint: "Comma separated values and must include 'event'. For example: event, tech, food, sport"
       - {label: 'Body', name: 'body', widget: 'markdown'}
     
   - name: 'settings'
