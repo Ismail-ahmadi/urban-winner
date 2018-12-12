@@ -4,8 +4,6 @@ backend:
 
 display_url: 'https://miloandfinn.netlify.com'
 logo_url: 'https://miloandfinn.netlify.com/assets/favicons/android-chrome-384x384.png'
-public_folder: '/images'
-media_folder: 'source/images'
 media_library:
   name: 'uploadcare'
   config:
