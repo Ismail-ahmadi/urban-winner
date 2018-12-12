@@ -63,7 +63,14 @@ collections:
       - {label: 'Title', name: 'title', widget: 'string'}
       - {label: 'Date', name: 'date', widget: 'date'}
       - {label: 'Location', name: 'location', widget: 'string'}
-      - {label: 'Image', name: 'image', widget: 'image', required: false}
+      - label: 'Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        media_library:
+          config:
+            multiple: true
+            previewStep: false
       - label: 'Tags'
         name: 'tags'
         widget: 'list'
