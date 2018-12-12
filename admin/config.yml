@@ -9,7 +9,7 @@ media_library:
   config:
     publicKey: '9f0b2b6f1d82d63f1332'
     imagesOnly: true
-    tabs: 'file gphotos'
+    tabs: 'file gphotos url'
 
 collections:
   - name: 'pages'

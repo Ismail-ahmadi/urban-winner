@@ -8,6 +8,11 @@
     <span class="italic faint">{{ date | formatDate }}</span>
     <h1>{{ title }}</h1>
     {{ content }}
+
+    {% if gallery %}
+      {% include 'comonents/gallery.html' %}
+    {% endif %}
+
     {% include 'components/social-share.html' %}
   </div>
 {% endblock %}

@@ -27,7 +27,7 @@ module.exports = eleventyConfig => {
     </svg>
   `);
 
-  eleventyConfig.addShortcode('Image', (url, alt) => `
+  eleventyConfig.addShortcode('Image', (url, alt = config.site.name) => `
     <img alt="${alt}" src="${url}-/resize/800x/-/quality/lighter/" 
     srcset="
       ${url}-/resize/1600x/-/quality/lighter/ 1600w, 

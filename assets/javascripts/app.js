@@ -1,7 +1,12 @@
 import qs from 'qs';
 import axios from 'axios';
+import Flickity from 'flickity';
 import '../stylesheets/style.scss';
 import * as config from '../../config/config.json';
+
+const flickity = new Flickity('.gallery', {
+  contain: true,
+});
 
 // const handleSubmit = e => {
 //   e.preventDefault();
