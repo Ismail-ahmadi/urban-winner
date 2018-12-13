@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Milo & Finn",
-    "url": "https://miloandfinn.netlify.com",
+    "url": "https://urban-winner.netlify.com",
     "lang": "en",
     "summary": "A sample website created using Eleventy & Netlify CMS",
     "description": "This is a paragraph containing a more detailed description of the summary line above. Should not exceed more than 160 characters.",
@@ -20,9 +20,9 @@
     }
   },
   "social": {
-    "facebook": "https://facebook.com/miloandfinn",
-    "twitter": "https://twitter.com/miloandfinn",
-    "instagram": "https://instagram.com/miloandfinn"
+    "facebook": "https://facebook.com/urban-winner",
+    "twitter": "https://twitter.com/urban-winner",
+    "instagram": "https://instagram.com/urban-winner"
   },
   "analytics": {
     "google": "GTM-KF5SH47",
