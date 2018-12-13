@@ -119,7 +119,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text', hint: 'Must not exceed 160 characters' }
               - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
-              - { label: 'Fallback Image', name: 'image', widget: 'image', hint: 'This image will be displayed when a post or page doesn\'t have a default cover image'}
+              - { label: 'Fallback Image', name: 'image', widget: 'image', hint: 'This image will be displayed when a post or page does not have a default cover image'}
           - label: 'Locales'
             name: 'locales'
             widget: 'object'
