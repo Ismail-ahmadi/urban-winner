@@ -1,34 +1,35 @@
 {
-    "site": {
-        "name": "Milo & Finn",
-        "url": "https://miloandfinn.netlify.com",
-        "lang": "en",
-        "summary": "A sample website created using Eleventy & Netlify CMS",
-        "description": "This is a paragraph containing a more detailed description of the summary line above. Should not exceed more than 160 characters.",
-        "themeColor": "#fb1",
-        "webmaster": "admin@email.com"
+  "site": {
+    "name": "Milo & Finn",
+    "url": "https://miloandfinn.netlify.com",
+    "lang": "en",
+    "summary": "A sample website created using Eleventy & Netlify CMS",
+    "description": "This is a paragraph containing a more detailed description of the summary line above. Should not exceed more than 160 characters.",
+    "webmaster": "admin@email.com",
+    "themeColor": "#fb1",
+    "image": "https://ucarecdn.com/bda06761-6071-4dff-b49e-b9d705cfb3d6/"
+  },
+  "locales": {
+    "en": {
+      "url": "/",
+      "next": "id"
     },
-    "locales": {
-        "en": {
-            "url": "/",
-            "next": "id"
-        },
-        "id": {
-            "url": "/id",
-            "next": "en"
-        }
-    },
-    "social": {
-        "facebook": "https://facebook.com/miloandfinn",
-        "twitter": "https://twitter.com/miloandfinn",
-        "instagram": "https://instagram.com/miloandfinn"
-    },
-    "analytics": {
-        "google": "GTM-KF5SH47",
-        "twitter": "handle",
-        "facebook": "317251918889539"
-    },
-    "form": {
-        "name": "Comments"
+    "id": {
+      "url": "/id",
+      "next": "en"
     }
+  },
+  "social": {
+    "facebook": "https://facebook.com/miloandfinn",
+    "twitter": "https://twitter.com/miloandfinn",
+    "instagram": "https://instagram.com/miloandfinn"
+  },
+  "analytics": {
+    "google": "GTM-KF5SH47",
+    "twitter": "mytwitterhandle",
+    "facebook": "317251918889539"
+  },
+  "form": {
+    "name": "Comments"
+  }
 }
