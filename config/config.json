@@ -1,12 +1,11 @@
 {
     "site": {
         "name": "Milo & Finn",
-        "lang": "en",
         "title": "Welcome to my website",
         "url": "https://miloandfinn.netlify.com",
+        "lang": "en",
         "description": "The description about this website",
         "themeColor": "#fb1",
-        "skipEmpty": ["home", "faq", "events"],
         "webmaster": "admin@email.com"
     },
     "locales": {

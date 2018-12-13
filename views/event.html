@@ -7,12 +7,12 @@
   <div class="container container--text">
     <span class="italic faint">{{ date | formatDate }}</span>
     <h1>{{ title }}</h1>
-    {{ content }}
-    
     {% include 'components/social-share.html' %}
 
+    {{ content }}
+
     {% if gallery %}
-      {% include 'comonents/gallery.html' %}
+      {% include 'components/gallery.html' %}
     {% endif %}
   </div>
 {% endblock %}

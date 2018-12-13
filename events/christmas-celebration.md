@@ -5,6 +5,8 @@ location: Jakarta
 image: 'https://ucarecdn.com/81570263-04f8-46d1-944e-14fc6fdfd3fd/'
 gallery:
   - 'https://ucarecdn.com/82b2624a-cb8a-4f74-856c-b9651428c020~1/nth/0/'
+  - 'https://ucarecdn.com/82b2624a-cb8a-4f74-856c-b9651428c020~1/nth/0/'
+  - 'https://ucarecdn.com/82b2624a-cb8a-4f74-856c-b9651428c020~1/nth/0/'
 ---
 
 ### Merry Christmas!

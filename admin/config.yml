@@ -113,18 +113,36 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Site Name', name: 'name', widget: 'string'}
-              - { label: 'Language', name: 'lang', widget: 'string'}
               - { label: 'Default Title', name: 'title', widget: 'string'}
               - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://'}
+              - { label: 'Language', name: 'lang', widget: 'string'}
               - { label: 'Description', name: 'description', widget: 'string' }
               - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
-              - label: 'Locales'
-                name: 'locales'
+          - label: 'Questions'
+            name: 'questions'
+            widget: 'list'
+            fields:
+              - { label: 'Question', name: 'question', widget: 'string' }
+              - { label: 'Answer', name: 'answer', widget: 'text' }              
+          - label: 'Locales'
+            name: 'locales'
+            widget: 'object'
+            fields: 
+              - label: 'English'
+                name: 'en'
                 widget: 'object'
                 fields: 
-                  - { label: 'English', name: 'en', widget: 'string', default: '/en' }
-                  - { label: 'French', name: 'fr', widget: 'string', default: '/fr' }
+                  - { label: 'URL', name: 'url', widget: 'string' }
+                  - { label: 'next', name: 'next', widget: 'string' }              
+                  - { label: 'name', name: 'name', widget: 'string', hint: 'Must be a standardized locale code' }
+              - label: 'Indonesian'
+                name: 'id'
+                widget: 'object'
+                fields: 
+                  - { label: 'URL', name: 'url', widget: 'string' }
+                  - { label: 'next', name: 'next', widget: 'string' }              
+                  - { label: 'name', name: 'name', widget: 'string', hint: 'Must be a standardized locale code' }
           - label: 'Social'
             name: 'social'
             widget: 'object'
@@ -136,9 +154,9 @@ collections:
             name: 'analytics'
             widget: 'object'
             fields:
-              - { label: 'Facebook App ID', name: 'facebook', widget: 'string', required: false }
-              - { label: 'Twitter Handle', name: 'twitter', widget: 'string', required: false }
               - { label: 'Google Tracking ID', name: 'google', widget: 'string', required: false, hint: 'Starts with GTM- ...' }
+              - { label: 'Twitter Handle', name: 'twitter', widget: 'string', required: false }
+              - { label: 'Facebook App ID', name: 'facebook', widget: 'string', required: false }
           - label: 'Form'
             name: 'form'
             widget: 'object'
