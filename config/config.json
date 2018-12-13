@@ -1,10 +1,10 @@
 {
     "site": {
         "name": "Milo & Finn",
-        "title": "Welcome to my website",
         "url": "https://miloandfinn.netlify.com",
         "lang": "en",
-        "description": "The description about this website",
+        "summary": "A sample website created using Eleventy & Netlify CMS",
+        "description": "This is a paragraph containing a more detailed description of the summary line above. Should not exceed more than 160 characters.",
         "themeColor": "#fb1",
         "webmaster": "admin@email.com"
     },

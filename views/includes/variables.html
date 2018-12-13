@@ -13,5 +13,5 @@
 {% if title %}
   {% capture pageTitle %}{{ title }} | {{ config.site.name }}{% endcapture %} 
 {% else %}
-  {% assign pageTitle = config.site.title %}
+  {% capture pageTitle %}{{ config.site.name }} - {{ config.site.summary }}{% endcapture %}
 {% endif %}

@@ -1,4 +1,4 @@
-{% assign shareTitle = title | default: config.site.title | url_encode %}
+{% assign shareTitle = pageTitle | url_encode %}
 {% capture url %}{{ config.site.url }}{{page.url}}{% endcapture %} 
 
 {% capture facebook %}
