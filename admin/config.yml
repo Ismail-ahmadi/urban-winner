@@ -119,12 +119,6 @@ collections:
               - { label: 'Description', name: 'description', widget: 'string' }
               - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
-          - label: 'Questions'
-            name: 'questions'
-            widget: 'list'
-            fields:
-              - { label: 'Question', name: 'question', widget: 'string' }
-              - { label: 'Answer', name: 'answer', widget: 'text' }              
           - label: 'Locales'
             name: 'locales'
             widget: 'object'
