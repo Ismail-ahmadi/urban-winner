@@ -119,6 +119,7 @@ collections:
               - { label: 'Description', name: 'description', widget: 'text', hint: 'Must not exceed 160 characters' }
               - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
+              - { label: 'Fallback Image', name: 'image', widget: 'image', hint: 'This image will be displayed when a post or page doesn\'t have a default cover image'}
           - label: 'Locales'
             name: 'locales'
             widget: 'object'
@@ -154,9 +155,3 @@ collections:
             widget: 'object'
             fields:
               - { label: 'Form Name', name: 'name', widget: 'string', hint: 'What the form is called in Netlify (Capitalize first letter)' }
-          - label: 'Fallback Images'
-            name: 'fallback'
-            widget: 'object'
-            fields:
-              - { label: 'Image', name: 'image', widget: 'image' }
-              - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
