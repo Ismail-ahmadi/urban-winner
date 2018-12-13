@@ -7,7 +7,5 @@
 <meta property="og:title" content="{{ pageTitle }}">
 <meta property="og:description" content="{{ description }}">
 <meta property="og:site_name" content="{{ config.site.name }}">
-<meta property="og:locale" content="{{ config.locales[config.site.lang].name }}" />
-{% for item in config.locales offset:1 %}
-  <meta property="og:locale:alternate" content="{{ item[1].name }}" />
-{% endfor %}
+<meta property="og:locale" content="en_us" />
+<meta property="og:locale:alternate" content="id_id" />

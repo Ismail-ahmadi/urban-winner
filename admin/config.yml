@@ -115,7 +115,7 @@ collections:
               - { label: 'Site Name', name: 'name', widget: 'string'}
               - { label: 'Default Title', name: 'title', widget: 'string'}
               - { label: 'Home URL', name: 'url', widget: 'string', hint: 'Must starts with https://'}
-              - { label: 'Language', name: 'lang', widget: 'string'}
+              - { label: 'Default Language', name: 'lang', widget: 'string'}
               - { label: 'Description', name: 'description', widget: 'string' }
               - { label: 'Admin Email', name: 'webmaster', widget: 'string' }
               - { label: 'Theme Color', name: 'themeColor', widget: 'string', hint: 'Hex value of a color. For example, #ffffff'}
@@ -128,15 +128,13 @@ collections:
                 widget: 'object'
                 fields: 
                   - { label: 'URL', name: 'url', widget: 'string' }
-                  - { label: 'next', name: 'next', widget: 'string' }              
-                  - { label: 'name', name: 'name', widget: 'string', hint: 'Must be a standardized locale code' }
+                  - { label: 'next', name: 'next', widget: 'string' }
               - label: 'Indonesian'
                 name: 'id'
                 widget: 'object'
                 fields: 
                   - { label: 'URL', name: 'url', widget: 'string' }
-                  - { label: 'next', name: 'next', widget: 'string' }              
-                  - { label: 'name', name: 'name', widget: 'string', hint: 'Must be a standardized locale code' }
+                  - { label: 'next', name: 'next', widget: 'string' }
           - label: 'Social'
             name: 'social'
             widget: 'object'
