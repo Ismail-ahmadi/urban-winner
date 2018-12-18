@@ -1,5 +1,6 @@
 {
   "tags": "event",
   "layout": "event",
-  "permalink": "/id/events/{{ title | slug }}/index.html"
+  "permalink": "/id/events/{{ title | slug }}/index.html",
+  "lang": "id"
 }

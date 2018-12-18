@@ -2,11 +2,13 @@
     "en": {
         "share": "Share",
         "en": "English",
-        "id": "Indonesian"
+        "id": "Indonesian",
+        "contact": "contact Us"
     },
     "id": {
         "share": "Bagikan",
         "en": "Inggris",
-        "id": "Bahasa"
+        "id": "Bahasa",
+        "contact": "تماس بگیرن"
     }
 }
