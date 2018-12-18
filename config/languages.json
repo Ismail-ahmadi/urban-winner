@@ -3,12 +3,14 @@
         "share": "Share",
         "en": "English",
         "id": "Indonesian",
-        "contact": "contact Us"
+        "contact": "contact Us",
+        "search": "search in here"
     },
     "id": {
         "share": "Bagikan",
         "en": "Inggris",
         "id": "Bahasa",
-        "contact": "تماس بگیرن"
+        "contact": "kontak kami",
+        "search": "cari di sini"
     }
 }

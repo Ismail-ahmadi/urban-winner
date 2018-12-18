@@ -1,0 +1,12 @@
+{% layout 'includes/layout.html' %}
+{% include 'includes/variables.html' %}
+
+{% block content %}
+  {% include 'includes/search.html' %}
+  <div class="search container">
+    <h1>{{ title }}</h1>
+    <div class="search__result">
+      <gcse:search></gcse:search>
+    </div>
+  </div>
+{% endblock %}

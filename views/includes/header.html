@@ -4,6 +4,10 @@
   <nav class="menu" role="navigation">
     {% include 'components/menu-items.html' %}
   </nav>
+  <form class="search__bar" action="{{config.site.url}}/search" role="form" accept-charset="UTF-8" >
+    <input type="text" name="q" autocomplete="off" placeholder="{{ 'search' | t:lang }}" class="search">
+    <button type="submit"> {% Icon 'search' %} </button>
+  </form>
   <button class="header__burger">Burger King</button>
   <div class="header-panel">
     {% include 'components/menu-items.html' %} 
