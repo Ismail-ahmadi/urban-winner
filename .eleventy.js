@@ -9,7 +9,7 @@ module.exports = eleventyConfig => {
    */
   eleventyConfig.addFilter('t', (key, lang = config.site.lang) => t[lang][key]);
 
-  eleventyConfig.addFilter('formatDate', date => day(date).format('MMM D, YYYY'));
+  eleventyConfig.addFilter('formatDate', (date, format = 'MMM D, YYYY') => day(date).format(format));
 
   eleventyConfig.addFilter('getLang', path => {
     const id = path.slice(2).split('/')[1];
